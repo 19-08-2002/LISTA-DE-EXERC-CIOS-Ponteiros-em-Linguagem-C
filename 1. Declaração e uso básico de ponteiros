@@ -129,6 +129,7 @@ LISTA DE EXERCÍCIOS
  e) Exiba o vetor completo ao final.
  Resultado esperado:
  10 20 3
+
 1.
 #include <stdio.h>
 
