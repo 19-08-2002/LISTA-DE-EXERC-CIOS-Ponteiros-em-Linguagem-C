@@ -1,1 +1,15 @@
+3.
+a) p não foi inicializado e contém um endereço inválido/indeterminado. Portanto, *p = valor causa comportamento indefinido.
+b) e c)
+#include <stdio.h>
 
+int main(void) {
+    int valor = 50;
+    int *p = &valor;
+
+    *p = 100;
+
+    printf("%d\n", valor);
+
+    return 0;
+}
