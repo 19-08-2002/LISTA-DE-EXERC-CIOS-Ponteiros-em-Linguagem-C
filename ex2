@@ -1,1 +1,7 @@
-
+2.
+a)
+x = 30
+*p = 30
+*q = 30
+b) Porque p e q apontam para o mesmo endereço de memória que é o endereço de x.
+c) Sim. q = p faz os dois ponteiros armazenarem o mesmo endereço.
