@@ -1,1 +1,34 @@
+6.
+#include <stdio.h>
 
+int *encontrarMaior(int *inicio, int tamanho) {
+    int *maior = inicio;
+    int *p = inicio + 1;
+
+    while (p < inicio + tamanho) {
+        if (*p > *maior) {
+            maior = p;
+        }
+        p++;
+    }
+
+    return maior;
+}
+
+int main(void) {
+    int vetor[5];
+    int *maior;
+    int i;
+
+    for (i = 0; i < 5; i++) {
+        scanf("%d", &vetor[i]);
+    }
+
+    maior = encontrarMaior(vetor, 5);
+
+    printf("Maior valor: %d\n", *maior);
+    printf("Posicao: %ld\n", maior - vetor);
+    printf("Endereco: %p\n", (void *)maior);
+
+    return 0;
+}
