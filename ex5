@@ -1,1 +1,17 @@
+5. 
+a)
+10
+10
+20
+21
 
+b) 
+p aponta para vetor[1].
+
+c) 
+10 21 30 40
+
+d)
+p++ → incrementa o ponteiro.
+*p++ → acessa o valor e depois incrementa o ponteiro.
+(*p)++ → incrementa o valor apontado.
