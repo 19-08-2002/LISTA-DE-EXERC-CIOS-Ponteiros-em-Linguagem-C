@@ -1,1 +1,31 @@
+8.
+#include <stdio.h>
 
+int contarVogais(const char *texto) {
+    int contador = 0;
+
+    while (*texto != '\0') {
+        if (*texto == 'a' || *texto == 'e' ||
+            *texto == 'i' || *texto == 'o' ||
+            *texto == 'u' ||
+            *texto == 'A' || *texto == 'E' ||
+            *texto == 'I' || *texto == 'O' ||
+            *texto == 'U') {
+            contador++;
+        }
+
+        texto++;
+    }
+
+    return contador;
+}
+
+int main(void) {
+    char texto[200];
+
+    fgets(texto, sizeof(texto), stdin);
+
+    printf("%d\n", contarVogais(texto));
+
+    return 0;
+}
