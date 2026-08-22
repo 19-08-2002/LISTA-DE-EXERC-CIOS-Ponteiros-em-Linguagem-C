@@ -1,1 +1,21 @@
+4.
+#include <stdio.h>
 
+int main(void) {
+    int numeros[] = {4, 8, 12, 16, 20, 24};
+    int *p = numeros;
+    int soma = 0;
+
+    while (p < numeros + 6) {
+        printf("%d ", *p);
+        soma += *p;
+        p++;
+    }
+
+    printf("\nSoma = %d\n", soma);
+
+    return 0;
+}
+Resposta:
+4 8 12 16 20 24
+Soma = 84
